@@ -62,7 +62,8 @@ const init = async () => {
                 type: 'input',
                 name: 'manager_id',
                 message: 'Enter the manager id for this employee'
-                }]).then((employee_data) => {
+                }])
+                .then((employee_data) => {
                     addEmployee(employee_data);
                 })
         }
