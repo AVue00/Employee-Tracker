@@ -58,14 +58,18 @@ export const getArrayManagers = async() => {
     // View all managers
     const query = 'SELECT * FROM employee WHERE manager_id IS NULL';
     const managers = await pool.query(query);
-    return(managers.rows.map(({ id, first_name, last_name }) => ({ name: `${first_name} ${last_name}`, value: id })));
+    const managersArray = managers.rows.map(({ id, first_name, last_name }) => ({ name: `${first_name} ${last_name}`, value: id }));
+    managersArray.push({ name: 'None', value: null });
+    return managersArray;
 }
 
 export const getEmployees = async() => {
     // View all employees
     const query = 'SELECT * FROM employee';
     const employees = await pool.query(query);
-    return(employees.rows.map(({ id, first_name, last_name }) => ({ name: `${first_name} ${last_name}`, value: id })));
+    const employeesArray = employees.rows.map(({ id, first_name, last_name }) => ({ name: `${first_name} ${last_name}`, value: id }));
+    employeesArray.push({ name: 'None', value: null });
+    return employeesArray;
 }
 
 export const viewAllRoles = async() => {
