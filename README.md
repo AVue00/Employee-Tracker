@@ -20,7 +20,7 @@ When first starting this application run an 'npm i' to install all necessary pac
 
 Below is a link to a walkthrough video demonstrating how the app works:
 
-Walkthrough Video: 
+Walkthrough Video: https://drive.google.com/file/d/18H-VCGviSBG-1V0R9ci5XKtgm7Vfg1ZE/view?usp=sharing
 
 
 ## Credits
