@@ -22,6 +22,18 @@ Below is a link to a walkthrough video demonstrating how the app works:
 
 Walkthrough Video: https://drive.google.com/file/d/18H-VCGviSBG-1V0R9ci5XKtgm7Vfg1ZE/view?usp=sharing
 
+When the app is launched in the command-line, a prompt will appear as such.
+
+![AppLaunch](assets/Invoke-App.png)
+
+When selecting one of the viewing options, it will display the table in the command-line.
+
+![ViewOption](assets/View-All.png)
+
+When using an add option, questions will prompt and take in responses to add to database.
+
+![AddAction](assets/Add-Command.png)
+
 
 ## Credits
 
